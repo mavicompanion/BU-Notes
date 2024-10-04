@@ -181,3 +181,29 @@ p, h1, h2, h3, h4, h5, h6, img {
       justify-items: left; /* Align items to the left */
    }
 }  
+
+
+.dark {
+    color: whitesmoke;
+    background-color: #5B5B5B;
+}
+
+.dark .nav-link {
+    background-color: #3a3a3a; /* Darker background for nav links */
+}
+
+.dark .content-area {
+    background-color: #3a3a3a; /* Dark background for content */
+    color: whitesmoke;
+}
+
+.dark .favourites-tile, .dark .file-tile, .dark .folder-tile {
+    background-color: #4a4a4a; /* Dark background for tiles */
+    color: whitesmoke;
+}
+
+.dark .page-title {
+    background-color: #444;
+    color: whitesmoke;
+}
+
