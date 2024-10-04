@@ -39,3 +39,77 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Reference to dark mode toggle button
+    const darkModeToggle = document.getElementById("darkModeToggle");
+    const body = document.body;
+
+    // Check localStorage for dark mode preference
+    const darkMode = localStorage.getItem('darkMode');
+    if (darkMode === 'enabled') {
+        enableDarkMode();
+    }
+
+    // Event listener for the toggle button
+    darkModeToggle.addEventListener('click', () => {
+        const darkMode = localStorage.getItem('darkMode');
+        if (darkMode !== 'enabled') {
+            enableDarkMode();
+        } else {
+            disableDarkMode();
+        }
+    });
+
+    // Function to enable dark mode
+    function enableDarkMode() {
+        body.classList.add('dark'); // Add 'dark' class to body
+        localStorage.setItem('darkMode', 'enabled'); // Store preference in localStorage
+        darkModeToggle.textContent = "Disable Dark Mode";
+    }
+
+    // Function to disable dark mode
+    function disableDarkMode() {
+        body.classList.remove('dark'); // Remove 'dark' class from body
+        localStorage.setItem('darkMode', 'disabled'); // Store preference in localStorage
+        darkModeToggle.textContent = "Enable Dark Mode";
+    }
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Reference to dark mode toggle button
+    const darkModeToggle = document.getElementById("darkModeToggle");
+    const body = document.body;
+
+    // Check localStorage for dark mode preference
+    const darkMode = localStorage.getItem('darkMode');
+    if (darkMode === 'enabled') {
+        enableDarkMode();
+    }
+
+    // Event listener for the toggle button
+    darkModeToggle.addEventListener('click', () => {
+        const darkMode = localStorage.getItem('darkMode');
+        if (darkMode !== 'enabled') {
+            enableDarkMode();
+        } else {
+            disableDarkMode();
+        }
+    });
+
+    // Function to enable dark mode
+    function enableDarkMode() {
+        body.classList.add('dark'); // Add 'dark' class to body
+        localStorage.setItem('darkMode', 'enabled'); // Store preference in localStorage
+        darkModeToggle.textContent = "Disable Dark Mode";
+    }
+
+    // Function to disable dark mode
+    function disableDarkMode() {
+        body.classList.remove('dark'); // Remove 'dark' class from body
+        localStorage.setItem('darkMode', 'disabled'); // Store preference in localStorage
+        darkModeToggle.textContent = "Enable Dark Mode";
+    }
+});
