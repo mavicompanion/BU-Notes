@@ -371,3 +371,56 @@ img {
     font-size: 18px; /* Smaller icons */
   }
 }
+
+
+
+
+.dark{
+   
+   color: whitesmoke;
+   background-color:#5B5B5B ;
+   
+}
+
+.dark {
+   color: whitesmoke;
+   background-color: #5B5B5B;
+}
+
+.dark .nav-link {
+   background-color: #3a3a3a; /* Darker background for nav links */
+   color: whitesmoke;
+}
+
+.dark .content-area {
+   background-color: #3a3a3a; /* Dark background for content */
+   color: whitesmoke;
+}
+
+.dark .favourites-tile, .dark .file-tile, .dark .folder-tile {
+   background-color: #4a4a4a; /* Dark background for tiles */
+   color: whitesmoke;
+}
+
+.dark .page-title {
+   background-color: #444;
+   color: whitesmoke;
+}
+
+
+.dark i {
+   color: whitesmoke;
+}
+
+
+
+.dark .file-tile {
+   margin-bottom: 1rem; /* Space below each file tile */
+   background-color: #444;
+}
+
+
+
+.dark .file-list-tile{
+   background-color: #444;
+}
