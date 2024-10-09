@@ -25,6 +25,8 @@
       referrerpolicy="no-referrer"
     />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <!-- Custom CSS for additional styles -->
     <link rel="stylesheet" href="../style.css" />
   </head>
@@ -255,12 +257,17 @@
           <a href="./firstYear.html" class="page-title rounded-pill ms-2"
             >1st Year Catalogue</a
           >
-          <a
-            href="#"
-            id="toggleLinkView"
-            class="page-title rounded-pill ms-2 icon-show"
-            ><i class="fa-solid fa-list fs-5"></i
-          ></a>
+          <div id="toggleLinkView">
+            <div class="toggle-button">
+              <div class="option list">
+                  <span class="icon">&#9776;</span> <!-- Hamburger menu icon -->
+              </div>
+              <div class="option folder selected">
+                  <span class="icon">&#9638;</span> <!-- 4 squares icon (grid) -->
+                  <span class="checkmark">&#10004;</span>
+              </div>
+            </div>
+          </div>
           <!-- Breadcrumb section -->
           <div
             class="d-none d-md-flex ms-2 ms-md-4 gap-1 pe-4 mt-3 mb-2 flex-wrap"
