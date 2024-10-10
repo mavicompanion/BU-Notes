@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BU-Notes Login</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-container {
+      width: 100%;
+      max-width: 400px;
+      padding: 2rem;
+      border: 1px solid #ced4da;
+      border-radius: 8px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .login-logo {
+      width: 100px;
+      height: auto;
+      display: block;
+      margin: 0 auto 1.5rem;
+    }
+    .btn-custom {
+      background-color: #4285f4;
+      color: white;
+    }
+    .btn-google {
+      background-color: #ffffff;
+      border: 1px solid #4285f4;
+      color: #4285f4;
+    }
+    .btn-google img {
+      width: 18px;
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <!-- <img src="logo.png" alt="BU-Notes Logo" class="login-logo"> -->
+    <h2 class="text-center mb-4">Login to BU-Notes</h2>
+    <button class="btn btn-google btn-block mb-3">
+      <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" alt="Google Logo"> -->
+      Login with Google
+    </button>
+    <div class="text-center mb-3">or</div>
+    <form>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Password" required>
+      </div>
+      <button type="submit" class="btn btn-custom btn-block">Login</button>
+    </form>
+    <p class="text-center mt-3">
+      <a href="#">Forgot Password?</a>
+    </p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
