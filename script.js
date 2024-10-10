@@ -16,28 +16,30 @@ document.addEventListener("DOMContentLoaded", function () {
   folderView.classList.remove("d-none"); // Remove hidden class from folder view
   listView.classList.add("d-none"); // Add hidden class to list view
 
-  // Set default icon for the toggle button (folder view icon)
-  toggleButton.innerHTML = '<i class="fa-solid fa-table-cells fs-5"></i>';
+//Change view of icons
+  document.querySelectorAll('.option').forEach((option) => {
+    option.addEventListener('click', function() {
+        document.querySelectorAll('.option').forEach((opt) => {
+            opt.classList.remove('selected');
+            const checkmark = opt.querySelector('.checkmark');
+            if (checkmark) checkmark.remove();
+        });
 
-  // Add click event listener to toggle between folder view and list view
-  toggleButton.addEventListener("click", function (event) {
-    event.preventDefault(); // Prevent default anchor behavior (if the button is inside an anchor tag)
+        this.classList.add('selected');
 
-    // Check if the folder view is hidden
-    if (folderView.classList.contains("d-none")) {
-      // If folder view is hidden, show it and hide the list view
-      folderView.classList.remove("d-none");
-      listView.classList.add("d-none");
+        const checkmarkSpan = document.createElement('span');
+        checkmarkSpan.classList.add('checkmark');
+        checkmarkSpan.innerHTML = '&#10004;'; /* Unicode for ✔ */
+        this.appendChild(checkmarkSpan);
 
-      // Change the toggle button icon to indicate folder view is active
-      toggleButton.innerHTML = '<i class="fa-solid fa-table-cells fs-5"></i>';
-    } else {
-      // If folder view is visible, hide it and show the list view
-      folderView.classList.add("d-none");
-      listView.classList.remove("d-none");
+        if(this.classList.contains('list')) {
+          folderView.classList.add("d-none");
+          listView.classList.remove("d-none");
+        } else if(this.classList.contains('folder')) {
+          folderView.classList.remove("d-none");
+          listView.classList.add("d-none");
+        }
+    });
+});
 
-      // Change the toggle button icon to indicate list view is active
-      toggleButton.innerHTML = '<i class="fa-solid fa-list fs-5"></i>';
-    }
-  });
 });

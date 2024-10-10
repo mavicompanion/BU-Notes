@@ -417,3 +417,43 @@ img {
     font-size: 18px; /* Smaller icons */
   }
 }
+
+#toggleLinkView {
+  display: inline-block;
+}
+
+.toggle-button {
+  display: flex;
+  position: relative;
+  width: fit-content;
+  background-color: #f0f0f0; /* Light gray background */
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 10px 16px 10px 16px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.option.selected {
+    background-color: #d0e8ff; /* Light blue for selected state */
+}
+
+.icon {
+    font-size: 18px;
+}
+
+.checkmark {
+  font-size: 16px; /* Adjust the size */
+  font-weight: bold; /* Make it bold */
+  color: #007bff; /* Change color to a nice blue */
+  margin-left: 5px; /* Add space from icon */
+}
