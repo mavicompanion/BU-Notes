@@ -418,18 +418,29 @@ img {
   }
 }
 
+#pageHeader {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
 #toggleLinkView {
   display: inline-block;
+  margin-right: 15px;
 }
 
 .toggle-button {
   display: flex;
   position: relative;
   width: fit-content;
-  background-color: #f0f0f0; /* Light gray background */
+  background-color: transparent;
+  border: 1px solid gray;
   border-radius: 50px;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .option {
@@ -437,23 +448,25 @@ img {
   align-items: center;
   justify-content: center;
   flex: 1;
-  padding: 10px 16px 10px 16px;
+  padding: 10px;
   cursor: pointer;
   position: relative;
   transition: background-color 0.3s;
 }
 
 .option.selected {
-    background-color: #d0e8ff; /* Light blue for selected state */
+    background-color: #d0e8ff;
 }
 
-.icon {
-    font-size: 18px;
+.icon, .checkmark {
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  color: transparent;
+  margin: 0px 4px 0px 4px;
 }
 
 .checkmark {
-  font-size: 16px; /* Adjust the size */
-  font-weight: bold; /* Make it bold */
-  color: #007bff; /* Change color to a nice blue */
-  margin-left: 5px; /* Add space from icon */
+  background-image: url("/img/checkmark_icon.svg");
 }

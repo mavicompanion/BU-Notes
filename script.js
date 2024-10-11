@@ -29,13 +29,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const checkmarkSpan = document.createElement('span');
         checkmarkSpan.classList.add('checkmark');
-        checkmarkSpan.innerHTML = '&#10004;'; /* Unicode for ✔ */
-        this.appendChild(checkmarkSpan);
 
         if(this.classList.contains('list')) {
+          this.prepend(checkmarkSpan);
           folderView.classList.add("d-none");
           listView.classList.remove("d-none");
         } else if(this.classList.contains('folder')) {
+          this.appendChild(checkmarkSpan);
           folderView.classList.remove("d-none");
           listView.classList.add("d-none");
         }
