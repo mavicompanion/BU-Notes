@@ -25,10 +25,16 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
     <!-- Custom CSS for additional styles -->
     <link rel="stylesheet" href="../style.css" />
+
+    <!-- Scripts For Basic Icons to Implement Outline Icons -->
+    <script async src="https://basicons.xyz/embed.js"></script>
   </head>
   <body>
     <div class="container-fluid p-0 d-flex h-100">
@@ -87,14 +93,29 @@
           </a>
         </div>
         <!-- Storage Stats bar -->
-        <div class="">
-          <p class="m-0">
-            <i class="fa-solid fa-cloud me-2 mb-3"></i>Storage
+        <div class="d-flex flex-column justify-content-start">
+          <p
+            style="
+              font-size: 16px;
+              font-weight: 400;
+              margin-bottom: 0.75rem;
+              color: #1f1f1f;
+            "
+            class="d-flex justify-content-start align-items-center"
+          >
+            <i class="bsc-cloud me-3"></i>Storage
           </p>
-          <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Basic example"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
             <div class="progress-bar rounded-pill" style="width: 75%"></div>
           </div>
-          <p class="py-2" style="color: rgba(0, 0, 0, 0.65);">75GB of 100GB used</p>
+          <p class="py-2 mb-1" style="color: #444746">75GB of 100GB used</p>
         </div>
       </div>
       <!-- content area -->
@@ -115,7 +136,11 @@
         <div class="sea">
           <div class="search-container">
             <div class="search-box">
-              <button><i class="button rounded-circle p-2  m-0 fa-solid fa-magnifying-glass"></i></button>
+              <button>
+                <i
+                  class="button rounded-circle p-2 m-0 fa-solid fa-magnifying-glass"
+                ></i>
+              </button>
               <input type="text" placeholder="Search in Drive" />
               <button class="button rounded-circle px-2">
                 <i class="fas fa-sliders-h"></i>
@@ -124,120 +149,226 @@
           </div>
           <div class="appButtonsContainer">
             <div class="app-buttons">
-              <i class="button rounded-circle p-2 m-0 fa-regular fa-circle-question fs-5"></i>
+              <i
+                class="button rounded-circle p-2 m-0 fa-regular fa-circle-question fs-5"
+              ></i>
               <i class="button rounded-circle p-2 m-0 fas fa-cog fs-5"></i>
 
               <!-- More Apps Dropdown -->
               <div class="dropdown">
-                <button class="btn button rounded-pill m-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <button
+                  class="btn button rounded-pill m-0 p-0"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   <i class="p-2 m-0 fas fa-th fs-5"></i>
                 </button>
                 <ul class="dropdown-menu rounded-5 more-apps mt-2">
-                  <div class="d-flex flex-column align-items-center justify-content-center">
-                    <div class="rounded-5 bg-white d-flex ms-2 me-2 py-3 px-3">   
+                  <div
+                    class="d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <div class="rounded-5 bg-white d-flex ms-2 me-2 py-3 px-3">
                       <div class="container text-center mt-3 mb-3">
                         <div class="row row-cols-3 gy-4">
                           <div class="col">
                             <a class="d-flex flex-column text-decoration-none">
-                              <img src="../img/google-search.png" alt="Account" class="icon-size ms-auto me-auto">
+                              <img
+                                src="../img/google-search.png"
+                                alt="Account"
+                                class="icon-size ms-auto me-auto"
+                              />
                               <p class="mt-2 mb-0">Search</p>
                             </a>
                           </div>
                           <div class="col">
-                            <a class="d-flex flex-column align-items-center text-decoration-none">
-                              <img src="../img/google-maps.png" alt="Search" class="icon-size ms-auto me-auto">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/google-maps.png"
+                                alt="Search"
+                                class="icon-size ms-auto me-auto"
+                              />
                               <p class="mt-2 mb-0">Maps</p>
                             </a>
                           </div>
                           <div class="col">
-                            <a class="d-flex flex-column align-items-center text-decoration-none">
-                              <img src="../img/google-gcp.png" alt="Maps" class="icon-size ms-auto me-auto">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/google-gcp.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
                               <p class="mt-2 mb-0">Cloud</p>
                             </a>
                           </div>
                           <div class="col">
-                            <a class="d-flex flex-column align-items-center text-decoration-none">
-                              <img src="../img/google-news.png" alt="Maps" class="icon-size ms-auto me-auto">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/google-news.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
                               <p class="mt-2 mb-0">News</p>
                             </a>
                           </div>
                           <div class="col">
-                            <a class="d-flex flex-column align-items-center text-decoration-none">
-                              <img src="../img/google-calendar.png" alt="Maps" class="icon-size ms-auto me-auto">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/google-calendar.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
                               <p class="mt-2 mb-0">Calendar</p>
                             </a>
                           </div>
                           <div class="col">
-                            <a class="d-flex flex-column align-items-center text-decoration-none">
-                              <img src="../img/g-mail.png" alt="Maps" class="icon-size ms-auto me-auto">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/g-mail.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
                               <p class="mt-2 mb-0">Gmail</p>
                             </a>
                           </div>
                           <div class="col">
-                            <a class="d-flex flex-column align-items-center text-decoration-none">
-                              <img src="../img/google-photos.png" alt="Maps" class="icon-size ms-auto me-auto">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/google-photos.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
                               <p class="mt-2 mb-0">Photos</p>
                             </a>
                           </div>
                           <div class="col">
-                            <a class="d-flex flex-column align-items-center text-decoration-none">
-                              <img src="../img/google-news.png" alt="Maps" class="icon-size ms-auto me-auto">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/google-news.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
                               <p class="mt-2 mb-0">News</p>
                             </a>
                           </div>
                           <div class="col">
-                            <a class="d-flex flex-column align-items-center text-decoration-none">
-                              <img src="../img/google-meet.png" alt="Maps" class="icon-size ms-auto me-auto">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/google-meet.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
                               <p class="mt-2 mb-0">Meet</p>
                             </a>
                           </div>
                           <div class="col">
-                            <a class="d-flex flex-column align-items-center text-decoration-none">
-                              <img src="../img/google-lens.png" alt="Maps" class="icon-size ms-auto me-auto">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/google-lens.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
                               <p class="mt-2 mb-0">Lens</p>
                             </a>
                           </div>
                           <div class="col">
-                            <a class="d-flex flex-column align-items-center text-decoration-none">
-                              <img src="../img/g-drive.png" alt="Maps" class="icon-size ms-auto me-auto">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/g-drive.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
                               <p class="mt-2 mb-0">Drive</p>
                             </a>
                           </div>
                           <div class="col">
-                            <a class="d-flex flex-column align-items-center text-decoration-none">
-                              <img src="../img/google-docs.png" alt="Maps" class="icon-size ms-auto me-auto">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/google-docs.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
                               <p class="mt-2 mb-0">Docs</p>
                             </a>
                           </div>
                           <div class="col">
-                            <a class="d-flex flex-column align-items-center text-decoration-none">
-                              <img src="../img/google-keep.png" alt="Maps" class="icon-size ms-auto me-auto">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/google-keep.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
                               <p class="mt-2 mb-0">Forms</p>
                             </a>
                           </div>
                           <div class="col">
-                            <a class="d-flex flex-column align-items-center text-decoration-none">
-                              <img src="../img/google-keep.png" alt="Maps" class="icon-size ms-auto me-auto">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/google-keep.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
                               <p class="mt-2 mb-0">Keep</p>
                             </a>
                           </div>
                           <div class="col">
-                            <a class="d-flex flex-column align-items-center text-decoration-none">
-                              <img src="../img/google-sheets.png" alt="Maps" class="icon-size ms-auto me-auto">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/google-sheets.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
                               <p class="mt-2 mb-0">Sheets</p>
                             </a>
                           </div>
                           <div class="col">
-                            <a class="d-flex flex-column align-items-center text-decoration-none">
-                              <img src="../img/goolge-slides.png" alt="Maps" class="icon-size ms-auto me-auto">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/goolge-slides.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
                               <p class="mt-2 mb-0">Slides</p>
                             </a>
                           </div>
                         </div>
-                      </div> 
+                      </div>
                     </div>
                     <div class="container text-center mt-4 mb-4">
-                      <a href="../index.html" class="btn rounded-button px-4 py-2">
+                      <a
+                        href="../index.html"
+                        class="btn rounded-button px-4 py-2"
+                      >
                         More from Mavi
                       </a>
                     </div>
@@ -254,22 +385,30 @@
           class="flex-fill ms-md-2 me-md-3 mt-md-3 mb-md-4 content-area py-4 px-1"
         >
           <!-- Page header -->
-           <div id="pageHeader">
+          <div id="pageHeader">
             <a href="./firstYear.html" class="page-title rounded-pill ms-2"
               >1st Year Catalogue</a
             >
             <div id="toggleLinkView">
               <div class="toggle-button">
                 <div class="option list">
-                    <span class="icon" style="background-image: url('../img/hamburger_icon.svg');"></span> <!-- Hamburger menu icon -->
+                  <span
+                    class="icon"
+                    style="background-image: url('../img/hamburger_icon.svg')"
+                  ></span>
+                  <!-- Hamburger menu icon -->
                 </div>
                 <div class="option folder selected">
-                    <span class="icon" style="background-image: url('../img/grid_icon.svg');"></span> <!-- 4 squares icon (grid) -->
-                    <span class="checkmark">&#10004;</span>
+                  <span
+                    class="icon"
+                    style="background-image: url('../img/grid_icon.svg')"
+                  ></span>
+                  <!-- 4 squares icon (grid) -->
+                  <span class="checkmark">&#10004;</span>
                 </div>
               </div>
             </div>
-           </div>
+          </div>
           <!-- Breadcrumb section -->
           <div
             class="d-none d-md-flex ms-2 ms-md-4 gap-1 pe-4 mt-3 mb-2 flex-wrap"

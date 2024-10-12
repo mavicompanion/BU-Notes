@@ -27,6 +27,9 @@
 
     <!-- Custom CSS for additional styles -->
     <link rel="stylesheet" href="../style.css" />
+
+    <!-- Scripts For Basic Icons to Implement Outline Icons -->
+    <script async src="https://basicons.xyz/embed.js"></script>
   </head>
   <body>
     <div class="container-fluid p-0 d-flex h-100">
@@ -38,19 +41,19 @@
       >
         <!-- Header -->
         <div class="d-flex">
-            <span
-              ><img
-                src="../img/google-drive.png"
-                width="36px"
-                class="me-3"
-                alt=""
-            /></span>
-            <h5 class="fw-semibold mt-2">BU Notes</h5>
-          </div>
+          <span
+            ><img
+              src="../img/google-drive.png"
+              width="36px"
+              class="me-3"
+              alt=""
+          /></span>
+          <h5 class="fw-semibold mt-2">BU Notes</h5>
+        </div>
         <div class="new-button mb-3 mt-4" style="width: 110px">
-            <i class="fa-solid fa-plus fs-5 fw-light"></i>
-            <span class="ms-3 me-auto fw-semibold">New</span>
-          </div>
+          <i class="fa-solid fa-plus fs-5 fw-light"></i>
+          <span class="ms-3 me-auto fw-semibold">New</span>
+        </div>
 
         <!-- Nav items -->
         <div class="d-flex flex-column flex-fill">
@@ -86,15 +89,30 @@
           </a>
         </div>
         <!-- Storage Stats bar -->
-        <div class="">
-            <p class="m-0">
-              <i class="fa-solid fa-cloud me-2 mb-3"></i>Storage
-            </p>
-            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar rounded-pill" style="width: 75%"></div>
-            </div>
-            <p class="py-2" style="color: rgba(0, 0, 0, 0.65);">75GB of 100GB used</p>
+        <div class="d-flex flex-column justify-content-start">
+          <p
+            style="
+              font-size: 16px;
+              font-weight: 400;
+              margin-bottom: 0.75rem;
+              color: #1f1f1f;
+            "
+            class="d-flex justify-content-start align-items-center"
+          >
+            <i class="bsc-cloud me-3"></i>Storage
+          </p>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Basic example"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar rounded-pill" style="width: 75%"></div>
           </div>
+          <p class="py-2 mb-1" style="color: #444746">75GB of 100GB used</p>
+        </div>
       </div>
       <!-- content area -->
       <div class="flex-fill d-flex flex-column space-between">
@@ -112,243 +130,438 @@
         </div>
         <!-- Add the search bar and app buttons here -->
         <div class="sea">
-            <div class="search-container">
-              <div class="search-box">
-                <button><i class="button rounded-circle p-2  m-0 fa-solid fa-magnifying-glass"></i></button>
-                <input type="text" placeholder="Search in Drive" />
-                <button class="button rounded-circle px-2">
-                  <i class="fas fa-sliders-h"></i>
-                </button>
-              </div>
-            </div>
-            <div class="appButtonsContainer">
-              <div class="app-buttons">
-                <i class="button rounded-circle p-2 m-0 fa-regular fa-circle-question fs-5"></i>
-                <i class="button rounded-circle p-2 m-0 fas fa-cog fs-5"></i>
-  
-                <!-- More Apps Dropdown -->
-                <div class="dropdown">
-                  <button class="btn button rounded-pill m-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="p-2 m-0 fas fa-th fs-5"></i>
-                  </button>
-                  <ul class="dropdown-menu rounded-5 more-apps mt-2">
-                    <div class="d-flex flex-column align-items-center justify-content-center">
-                      <div class="rounded-5 bg-white d-flex ms-2 me-2 py-3 px-3">   
-                        <div class="container text-center mt-3 mb-3">
-                          <div class="row row-cols-3 gy-4">
-                            <div class="col">
-                              <a class="d-flex flex-column text-decoration-none">
-                                <img src="../img/google-search.png" alt="Account" class="icon-size ms-auto me-auto">
-                                <p class="mt-2 mb-0">Search</p>
-                              </a>
-                            </div>
-                            <div class="col">
-                              <a class="d-flex flex-column align-items-center text-decoration-none">
-                                <img src="../img/google-maps.png" alt="Search" class="icon-size ms-auto me-auto">
-                                <p class="mt-2 mb-0">Maps</p>
-                              </a>
-                            </div>
-                            <div class="col">
-                              <a class="d-flex flex-column align-items-center text-decoration-none">
-                                <img src="../img/google-gcp.png" alt="Maps" class="icon-size ms-auto me-auto">
-                                <p class="mt-2 mb-0">Cloud</p>
-                              </a>
-                            </div>
-                            <div class="col">
-                              <a class="d-flex flex-column align-items-center text-decoration-none">
-                                <img src="../img/google-news.png" alt="Maps" class="icon-size ms-auto me-auto">
-                                <p class="mt-2 mb-0">News</p>
-                              </a>
-                            </div>
-                            <div class="col">
-                              <a class="d-flex flex-column align-items-center text-decoration-none">
-                                <img src="../img/google-calendar.png" alt="Maps" class="icon-size ms-auto me-auto">
-                                <p class="mt-2 mb-0">Calendar</p>
-                              </a>
-                            </div>
-                            <div class="col">
-                              <a class="d-flex flex-column align-items-center text-decoration-none">
-                                <img src="../img/g-mail.png" alt="Maps" class="icon-size ms-auto me-auto">
-                                <p class="mt-2 mb-0">Gmail</p>
-                              </a>
-                            </div>
-                            <div class="col">
-                              <a class="d-flex flex-column align-items-center text-decoration-none">
-                                <img src="../img/google-photos.png" alt="Maps" class="icon-size ms-auto me-auto">
-                                <p class="mt-2 mb-0">Photos</p>
-                              </a>
-                            </div>
-                            <div class="col">
-                              <a class="d-flex flex-column align-items-center text-decoration-none">
-                                <img src="../img/google-news.png" alt="Maps" class="icon-size ms-auto me-auto">
-                                <p class="mt-2 mb-0">News</p>
-                              </a>
-                            </div>
-                            <div class="col">
-                              <a class="d-flex flex-column align-items-center text-decoration-none">
-                                <img src="../img/google-meet.png" alt="Maps" class="icon-size ms-auto me-auto">
-                                <p class="mt-2 mb-0">Meet</p>
-                              </a>
-                            </div>
-                            <div class="col">
-                              <a class="d-flex flex-column align-items-center text-decoration-none">
-                                <img src="../img/google-lens.png" alt="Maps" class="icon-size ms-auto me-auto">
-                                <p class="mt-2 mb-0">Lens</p>
-                              </a>
-                            </div>
-                            <div class="col">
-                              <a class="d-flex flex-column align-items-center text-decoration-none">
-                                <img src="../img/g-drive.png" alt="Maps" class="icon-size ms-auto me-auto">
-                                <p class="mt-2 mb-0">Drive</p>
-                              </a>
-                            </div>
-                            <div class="col">
-                              <a class="d-flex flex-column align-items-center text-decoration-none">
-                                <img src="../img/google-docs.png" alt="Maps" class="icon-size ms-auto me-auto">
-                                <p class="mt-2 mb-0">Docs</p>
-                              </a>
-                            </div>
-                            <div class="col">
-                              <a class="d-flex flex-column align-items-center text-decoration-none">
-                                <img src="../img/google-keep.png" alt="Maps" class="icon-size ms-auto me-auto">
-                                <p class="mt-2 mb-0">Forms</p>
-                              </a>
-                            </div>
-                            <div class="col">
-                              <a class="d-flex flex-column align-items-center text-decoration-none">
-                                <img src="../img/google-keep.png" alt="Maps" class="icon-size ms-auto me-auto">
-                                <p class="mt-2 mb-0">Keep</p>
-                              </a>
-                            </div>
-                            <div class="col">
-                              <a class="d-flex flex-column align-items-center text-decoration-none">
-                                <img src="../img/google-sheets.png" alt="Maps" class="icon-size ms-auto me-auto">
-                                <p class="mt-2 mb-0">Sheets</p>
-                              </a>
-                            </div>
-                            <div class="col">
-                              <a class="d-flex flex-column align-items-center text-decoration-none">
-                                <img src="../img/goolge-slides.png" alt="Maps" class="icon-size ms-auto me-auto">
-                                <p class="mt-2 mb-0">Slides</p>
-                              </a>
-                            </div>
-                          </div>
-                        </div> 
-                      </div>
-                      <div class="container text-center mt-4 mb-4">
-                        <a href="../index.html" class="btn rounded-button px-4 py-2">
-                          More from Mavi
-                        </a>
-                      </div>
-                    </div>
-                  </ul>
-                </div>
-  
-                <img src="../img/profile.png" alt="Profile Picture" />
-              </div>
+          <div class="search-container">
+            <div class="search-box">
+              <button>
+                <i
+                  class="button rounded-circle p-2 m-0 fa-solid fa-magnifying-glass"
+                ></i>
+              </button>
+              <input type="text" placeholder="Search in Drive" />
+              <button class="button rounded-circle px-2">
+                <i class="fas fa-sliders-h"></i>
+              </button>
             </div>
           </div>
+          <div class="appButtonsContainer">
+            <div class="app-buttons">
+              <i
+                class="button rounded-circle p-2 m-0 fa-regular fa-circle-question fs-5"
+              ></i>
+              <i class="button rounded-circle p-2 m-0 fas fa-cog fs-5"></i>
+
+              <!-- More Apps Dropdown -->
+              <div class="dropdown">
+                <button
+                  class="btn button rounded-pill m-0 p-0"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="p-2 m-0 fas fa-th fs-5"></i>
+                </button>
+                <ul class="dropdown-menu rounded-5 more-apps mt-2">
+                  <div
+                    class="d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <div class="rounded-5 bg-white d-flex ms-2 me-2 py-3 px-3">
+                      <div class="container text-center mt-3 mb-3">
+                        <div class="row row-cols-3 gy-4">
+                          <div class="col">
+                            <a class="d-flex flex-column text-decoration-none">
+                              <img
+                                src="../img/google-search.png"
+                                alt="Account"
+                                class="icon-size ms-auto me-auto"
+                              />
+                              <p class="mt-2 mb-0">Search</p>
+                            </a>
+                          </div>
+                          <div class="col">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/google-maps.png"
+                                alt="Search"
+                                class="icon-size ms-auto me-auto"
+                              />
+                              <p class="mt-2 mb-0">Maps</p>
+                            </a>
+                          </div>
+                          <div class="col">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/google-gcp.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
+                              <p class="mt-2 mb-0">Cloud</p>
+                            </a>
+                          </div>
+                          <div class="col">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/google-news.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
+                              <p class="mt-2 mb-0">News</p>
+                            </a>
+                          </div>
+                          <div class="col">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/google-calendar.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
+                              <p class="mt-2 mb-0">Calendar</p>
+                            </a>
+                          </div>
+                          <div class="col">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/g-mail.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
+                              <p class="mt-2 mb-0">Gmail</p>
+                            </a>
+                          </div>
+                          <div class="col">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/google-photos.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
+                              <p class="mt-2 mb-0">Photos</p>
+                            </a>
+                          </div>
+                          <div class="col">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/google-news.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
+                              <p class="mt-2 mb-0">News</p>
+                            </a>
+                          </div>
+                          <div class="col">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/google-meet.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
+                              <p class="mt-2 mb-0">Meet</p>
+                            </a>
+                          </div>
+                          <div class="col">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/google-lens.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
+                              <p class="mt-2 mb-0">Lens</p>
+                            </a>
+                          </div>
+                          <div class="col">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/g-drive.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
+                              <p class="mt-2 mb-0">Drive</p>
+                            </a>
+                          </div>
+                          <div class="col">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/google-docs.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
+                              <p class="mt-2 mb-0">Docs</p>
+                            </a>
+                          </div>
+                          <div class="col">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/google-keep.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
+                              <p class="mt-2 mb-0">Forms</p>
+                            </a>
+                          </div>
+                          <div class="col">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/google-keep.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
+                              <p class="mt-2 mb-0">Keep</p>
+                            </a>
+                          </div>
+                          <div class="col">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/google-sheets.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
+                              <p class="mt-2 mb-0">Sheets</p>
+                            </a>
+                          </div>
+                          <div class="col">
+                            <a
+                              class="d-flex flex-column align-items-center text-decoration-none"
+                            >
+                              <img
+                                src="../img/goolge-slides.png"
+                                alt="Maps"
+                                class="icon-size ms-auto me-auto"
+                              />
+                              <p class="mt-2 mb-0">Slides</p>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container text-center mt-4 mb-4">
+                      <a
+                        href="../index.html"
+                        class="btn rounded-button px-4 py-2"
+                      >
+                        More from Mavi
+                      </a>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+
+              <img src="../img/profile.png" alt="Profile Picture" />
+            </div>
+          </div>
+        </div>
         <!-- assets area -->
         <div
           class="flex-fill ms-md-2 me-md-3 mt-md-3 mb-md-4 content-area py-4 px-1"
         >
-<!-- Page header -->
-                <a href="./firstYear.html" class="page-title rounded-pill ms-2">1st Year Catalogue</a>
-                <a href="#" id="toggleLinkView" class="page-title rounded-pill ms-2 icon-show"><i class="fa-solid fa-list fs-5"></i></a>
-                <!-- Breadcrumb section -->
-                <div class="d-none d-md-flex ms-2 ms-md-4 gap-1 pe-4 mt-3 mb-2 flex-wrap">
-                    <a href="../index.html" class="d-flex p-2 rounded-pill align-items-center button">
-                        <i class="fa-solid fa-folder-tree" style="font-size:medium;"></i>
-                    </a>
-                    <div class="d-flex p-2 rounded-pill align-items-center">
-                        <i class="fa-solid fa-chevron-right" style="font-size:small;"></i>
-                    </div>
-                    <a href="./firstYear.html" class="rounded-pill folder-locator">
-                        1st Year
-                    </a>
-                    <div class="d-flex p-2 rounded-pill align-items-center">
-                        <i class="fa-solid fa-chevron-right" style="font-size:small;"></i>
-                    </div>
-                    <a href="" class="rounded-pill folder-locator">
-                        1st Semester
-                    </a>
+          <!-- Page header -->
+          <a href="./firstYear.html" class="page-title rounded-pill ms-2"
+            >1st Year Catalogue</a
+          >
+          <a
+            href="#"
+            id="toggleLinkView"
+            class="page-title rounded-pill ms-2 icon-show"
+            ><i class="fa-solid fa-list fs-5"></i
+          ></a>
+          <!-- Breadcrumb section -->
+          <div
+            class="d-none d-md-flex ms-2 ms-md-4 gap-1 pe-4 mt-3 mb-2 flex-wrap"
+          >
+            <a
+              href="../index.html"
+              class="d-flex p-2 rounded-pill align-items-center button"
+            >
+              <i class="fa-solid fa-folder-tree" style="font-size: medium"></i>
+            </a>
+            <div class="d-flex p-2 rounded-pill align-items-center">
+              <i class="fa-solid fa-chevron-right" style="font-size: small"></i>
+            </div>
+            <a href="./firstYear.html" class="rounded-pill folder-locator">
+              1st Year
+            </a>
+            <div class="d-flex p-2 rounded-pill align-items-center">
+              <i class="fa-solid fa-chevron-right" style="font-size: small"></i>
+            </div>
+            <a href="" class="rounded-pill folder-locator"> 1st Semester </a>
+          </div>
+          <!-- folder section -->
+          <div class="d-flex flex-wrap gap-3 gap-md-4 ms-md-4 mt-4 mt-md-2">
+            <a href="" class="folder-tile">
+              <img src="../img/folder.png" width="100px" alt="" />
+              <div class="">
+                <p
+                  class="m-0 mb-1 fw-semibold"
+                  style="
+                    font-size: small;
+                    max-width: 100px;
+                    word-wrap: break-word;
+                  "
+                >
+                  EMAT-101-L
+                </p>
+                <p
+                  style="
+                    margin: 0px;
+                    font-size: x-small;
+                    max-width: 120px;
+                    overflow-x: hidden;
+                  "
+                >
+                  Engineering Calculus
+                </p>
+              </div>
+            </a>
+            <a href="" class="folder-tile">
+              <img src="../img/folder.png" width="100px" alt="" />
+              <div class="">
+                <p
+                  class="m-0 mb-1 fw-semibold"
+                  style="
+                    font-size: small;
+                    max-width: 100px;
+                    word-wrap: break-word;
+                  "
+                >
+                  CSET-101-L
+                </p>
+                <p
+                  style="
+                    margin: 0px;
+                    font-size: x-small;
+                    max-width: 120px;
+                    overflow-x: hidden;
+                  "
+                >
+                  Python
+                </p>
+              </div>
+            </a>
+          </div>
 
+          <!-- file container -->
+          <div
+            class="d-flex flex-wrap gap-2 gap-md-2 ms-md-4 items-space folder-view-container"
+          >
+            <!-- file tile -->
+            <div
+              class="bg-slate rounded-4 p-2 pb-3 file-tile ms-2 m-md-1 file-tile"
+            >
+              <div class="m-0 d-flex p-2 gap-1 align-items-center">
+                <a
+                  href=""
+                  data-bs-toggle="tooltip"
+                  title="DMS All slidesaaaaaaaaaajjjjjjaaaaaaaa"
+                  class="d-flex gap-2 align-items-center"
+                >
+                  <p class="m-0 fw-semibold" style="font-size: small">
+                    SEM-1 Curriculum
+                  </p>
+                </a>
+                <a href="" class="ms-auto d-flex button p-2 rounded-pill">
+                  <i class="fa fa-download" aria-hidden="true"></i>
+                </a>
+              </div>
+              <a href="">
+                <div
+                  class="rounded-4 bg-white py-5 py-md-5 d-flex justify-content-center"
+                >
+                  <img src="../img/pdf.png" width="40px" alt="" />
                 </div>
-                <!-- folder section -->
-                <div class="d-flex flex-wrap gap-3 gap-md-4 ms-md-4 mt-4 mt-md-2">
-                    <a href="" class="folder-tile">
-                        <img src="../img/folder.png" width="100px" alt="">
-                        <div class="">
-                            <p class="m-0 mb-1 fw-semibold" style="font-size: small;max-width: 100px;word-wrap: break-word;">EMAT-101-L</p>
-                            <p style="margin: 0px;font-size: x-small;max-width: 120px;overflow-x: hidden;">Engineering Calculus </p>
-                        </div>
-                    </a>
-                    <a href="" class="folder-tile">
-                        <img src="../img/folder.png" width="100px" alt="">
-                        <div class="">
-                            <p class="m-0 mb-1 fw-semibold" style="font-size: small;max-width: 100px;word-wrap: break-word;">CSET-101-L</p>
-                            <p style="margin: 0px;font-size: x-small;max-width: 120px;overflow-x: hidden;">Python</p>
-                        </div>
-                    </a>
+              </a>
+            </div>
+            <!-- file tile -->
+            <div
+              class="bg-slate rounded-4 p-2 pb-3 file-tile ms-2 m-md-1 file-tile"
+            >
+              <div class="m-0 d-flex p-2 gap-1 align-items-center">
+                <a
+                  href=""
+                  data-bs-toggle="tooltip"
+                  title="DMS All slidesaaaaaaaaaajjjjjjaaaaaaaa"
+                  class="d-flex gap-2 align-items-center"
+                >
+                  <p class="m-0 fw-semibold" style="font-size: small">
+                    SEM-1 Curriculum
+                  </p>
+                </a>
+                <a href="" class="ms-auto d-flex button p-2 rounded-pill">
+                  <i class="fa fa-download" aria-hidden="true"></i>
+                </a>
+              </div>
+              <a href="">
+                <div
+                  class="rounded-4 bg-white py-5 py-md-5 d-flex justify-content-center"
+                >
+                  <img src="../img/pdf.png" width="40px" alt="" />
                 </div>
-                
-                <!-- file container -->
-                <div class="d-flex flex-wrap gap-2 gap-md-2 ms-md-4 items-space folder-view-container">
-                    <!-- file tile -->
-                    <div class="bg-slate rounded-4 p-2 pb-3 file-tile ms-2 m-md-1 file-tile">
-                        <div class="m-0 d-flex p-2 gap-1 align-items-center">
-                            <a href="" data-bs-toggle="tooltip" title="DMS All slidesaaaaaaaaaajjjjjjaaaaaaaa" class="d-flex gap-2 align-items-center">
-                                <p class="m-0 fw-semibold" style="font-size: small;">SEM-1 Curriculum</p>
-                            </a>
-                        <a href="" class="ms-auto d-flex button p-2 rounded-pill">
-                            <i class="fa fa-download" aria-hidden="true"></i>
-                        </a>
-                        </div>
-                        <a href="">
-                            <div class="rounded-4 bg-white py-5 py-md-5 d-flex justify-content-center">
-                                <img src="../img/pdf.png" width="40px" alt="">
-                            </div>
-                        </a>
-                    </div>
-                    <!-- file tile -->
-                    <div class="bg-slate rounded-4 p-2 pb-3 file-tile ms-2 m-md-1 file-tile">
-                        <div class="m-0 d-flex p-2 gap-1 align-items-center">
-                            <a href="" data-bs-toggle="tooltip" title="DMS All slidesaaaaaaaaaajjjjjjaaaaaaaa" class="d-flex gap-2 align-items-center">
-                                <p class="m-0 fw-semibold" style="font-size: small;">SEM-1 Curriculum</p>
-                            </a>
-                        <a href="" class="ms-auto d-flex button p-2 rounded-pill">
-                            <i class="fa fa-download" aria-hidden="true"></i>
-                        </a>
-                        </div>
-                        <a href="">
-                            <div class="rounded-4 bg-white py-5 py-md-5 d-flex justify-content-center">
-                                <img src="../img/pdf.png" width="40px" alt="">
-                            </div>
-                        </a>
-                    </div>               
-                </div> 
-                <div class="ps-2 ps-md-0 pe-3 mt-3 pe-md-0 d-flex flex-column ms-4 folder-list-container">
-                    <!-- file list item tile -->
-                    <div class="ms-2 py-2 px-3 d-flex file-list-tile">
-                        <a href="" class="d-flex gap-2 align-items-center flex-fill">
-                            <img src="../img/pdf.png" width="18px" style="margin: 0px;" alt="">
-                            <p class="m-0 fw-semibold" style="font-size: small;">DMS All slides</p>
-                        </a>
-                        <a href="" class="ms-auto d-flex button p-2 rounded-pill">
-                            <i class="fa fa-download" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <!-- file list item tile -->
-                    <div class="ms-2 py-2 px-3 d-flex file-list-tile">
-                        <a href="" class="d-flex gap-2 align-items-center flex-fill">
-                            <img src="../img/pdf.png" width="18px" style="margin: 0px;" alt="">
-                            <p class="m-0 fw-semibold" style="font-size: small;">DMS All slides</p>
-                        </a>
-                        <a href="" class="ms-auto d-flex button p-2 rounded-pill">
-                            <i class="fa fa-download" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="ps-2 ps-md-0 pe-3 mt-3 pe-md-0 d-flex flex-column ms-4 folder-list-container"
+          >
+            <!-- file list item tile -->
+            <div class="ms-2 py-2 px-3 d-flex file-list-tile">
+              <a href="" class="d-flex gap-2 align-items-center flex-fill">
+                <img
+                  src="../img/pdf.png"
+                  width="18px"
+                  style="margin: 0px"
+                  alt=""
+                />
+                <p class="m-0 fw-semibold" style="font-size: small">
+                  DMS All slides
+                </p>
+              </a>
+              <a href="" class="ms-auto d-flex button p-2 rounded-pill">
+                <i class="fa fa-download" aria-hidden="true"></i>
+              </a>
+            </div>
+            <!-- file list item tile -->
+            <div class="ms-2 py-2 px-3 d-flex file-list-tile">
+              <a href="" class="d-flex gap-2 align-items-center flex-fill">
+                <img
+                  src="../img/pdf.png"
+                  width="18px"
+                  style="margin: 0px"
+                  alt=""
+                />
+                <p class="m-0 fw-semibold" style="font-size: small">
+                  DMS All slides
+                </p>
+              </a>
+              <a href="" class="ms-auto d-flex button p-2 rounded-pill">
+                <i class="fa fa-download" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
