@@ -158,6 +158,22 @@ img {
   flex-shrink: 0; /* Prevent buttons from shrinking */
 }
 
+.search-box .search-input {
+  width: calc(100% - 80px); /* Adjust width to fit the container */
+  border-radius: 0.375rem; /* Rounded corners */
+}
+
+.search-box .search-dropdown {
+  width: calc(100% - 80px); /* Match the width of the input */
+  border-radius: 0.375rem; /* Rounded corners */
+  margin-top: 0.5rem; /* Space between input and dropdown */
+}
+
+.advanced-search-text {
+  color: blue;
+  font-weight: bold;
+}
+
 .appButtonsContainer {
   display: flex;
   align-items: center;
@@ -345,7 +361,7 @@ img {
 
 /* Responsive Design */
 @media (max-width: 992px) {
-  .favourites-tile {
+  .favourites-ttile {
     width: 48%;
     margin-right: 2%;
   }
