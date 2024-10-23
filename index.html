@@ -141,16 +141,24 @@
         <!-- Add the search bar and app buttons here -->
         <div class="sea">
           <div class="search-container">
-            <div class="search-box">
-              <button>
-                <i
-                  class="button rounded-circle p-2 m-0 fa-solid fa-magnifying-glass"
-                ></i>
-              </button>
-              <input type="text" placeholder="Search in Drive" />
+            <div class="search-box dropdown">
+              <button
+                class="button rounded-circle p-2 m-0 fa-solid fa-magnifying-glass"
+              ></button>
+              <input
+                type="text"
+                placeholder="Search in Drive"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                class="search-input"
+              />
               <button class="button rounded-circle px-2">
                 <i class="fas fa-sliders-h"></i>
               </button>
+              <div class="dropdown-menu p-3 search-dropdown">
+                <!-- Dropdown content here -->
+                <p class="advanced-search-text">Advanced Search</p>
+              </div>
             </div>
           </div>
           <div class="appButtonsContainer">
